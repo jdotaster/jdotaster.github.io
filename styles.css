@@ -1,0 +1,72 @@
+/* Global themes */
+:root {
+    --bg-color-primary: #132d2f;
+    --bg-color-secondary: #223b3d;
+    font-family: Arial, Helvetica, sans-serif;
+    --text-color-primary: #d1c6c3;
+    --text-color-secondary: #7f655d;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-color-primary);
+    margin: 0;
+}
+/* ... */
+
+
+/* Navbar styles */
+.navbar-container {
+    position: sticky;
+    top: 0;
+    width: 100%;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-list {
+    display: flex;
+}
+
+.navbar-item {
+    text-align: center;
+    color: var(--text-color-primary);
+    font-size: 3vh;
+    padding: 1vh 2vh;
+}
+
+.navbar-item i::before {
+    height: 3vh;
+}
+
+.navbar-item:hover {
+    color: var(--text-color-secondary);
+}
+
+@media (max-width: 320px) {
+    .navbar-item {
+        font-size: 2vh;
+    }
+}
+
+@media (max-width: 900px) {
+    .navbar-list {
+        display: none;
+    }
+}
+
+@media (min-width: 901px) {
+    .navbar-item i {
+        display: none;
+    }
+}
+/* ... */
+
