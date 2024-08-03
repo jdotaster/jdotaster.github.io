@@ -32,7 +32,7 @@ body {
     justify-content: space-between;
     align-items: center;
     background-color: black;
-    opacity: .5;
+    opacity: 1;
     height: 6vh;
 }
 
@@ -55,7 +55,7 @@ body {
     display: none;
     flex-direction: column;
     text-align: right;
-    opacity: .4;
+    opacity: 1;
     background-color: black;
 }
 
@@ -85,6 +85,23 @@ body {
 /* ... */
 
 
+/* Scroll icon */
+#scroll-icon {
+    text-align: center;
+    color: var(--text-color-primary);
+    font-size: 3vh;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 1vh;
+}
+
+#scroll-icon:hover {
+    color: var(--text-color-secondary);
+}
+/* ... */
+
+
 /* Introduction section */
 #intro-container {
     display: flex;
@@ -92,6 +109,5 @@ body {
     text-align: center;
     color: var(--text-color-primary);
     justify-content: flex-start;
-    height: 92vh;
 }
 /* ... */

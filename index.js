@@ -13,7 +13,19 @@ const registerNavbarMenuEvents = () => {
     })
 }
 
+const registerScrollButtonEvents = () => {
+    window.addEventListener('scroll', () => {
+        if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
+            document.getElementById("scroll-icon").style.display = "none";
+        } else {
+            document.getElementById("scroll-icon").style.display = "block";
+        }
+    });
+}
+
+
 document.addEventListener("DOMContentLoaded", () => {
     registerNavbarMenuEvents();
+    registerScrollButtonEvents();
 })
 
