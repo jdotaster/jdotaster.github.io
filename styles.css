@@ -31,7 +31,7 @@ body {
     justify-content: space-between;
     align-items: center;
     background-color: black;
-    opacity: .33;
+    opacity: .5;
 }
 
 .navbar-item {
@@ -53,19 +53,31 @@ body {
     display: none;
     flex-direction: column;
     text-align: right;
-    opacity: .33;
+    opacity: .4;
     background-color: black;
+}
+
+#navbar-list {
+    flex-direction: row;
 }
 
 @media (min-width: 1px) {
     #navbar-menu-button {
         display: flex;
     }
+
+    #navbar-list {
+        display: none;
+    }
 }
 
 @media (min-width: 801px) {
     #navbar-menu-button {
         display: none;
+    }
+
+    #navbar-list {
+        display: flex;
     }
 }
 /* ... */
