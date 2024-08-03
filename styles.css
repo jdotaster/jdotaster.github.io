@@ -48,6 +48,11 @@ body {
     padding: 1vh 2vh;
 }
 
+.navbar-item a {
+    text-decoration: none;
+    color: inherit;
+}
+
 #navbar-menu-button {
     padding: 1vh;
 }
