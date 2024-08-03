@@ -15,6 +15,11 @@ body {
     background-color: var(--bg-color-primary);
     margin: 0;
 }
+
+.section-header {
+    color: var(--text-color-primary);
+    text-align: left;
+}
 /* ... */
 
 
