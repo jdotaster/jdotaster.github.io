@@ -224,8 +224,33 @@ body {
 /* ... */
 
 /* Contact */
+#contact-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    align-items: center;
+}
+
+#contact-li {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+#contact-email {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+#contact-github {
+    grid-column: 3;
+    grid-row: 2;
+}
+
 .contact-item {
     color: var(--text-color-primary);
+    text-align: center;
+    font-size: 8vh;
+    align-items: center;
 }
 
 .contact-item a {
