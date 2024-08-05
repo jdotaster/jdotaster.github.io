@@ -6,6 +6,8 @@
     font-family: Arial, Helvetica, sans-serif;
     --text-color-primary: #b5b4a0;
     --text-color-secondary: #7f655d;
+    --text-color-tertiary: #949770;
+    --accent-color: #cb9a3e;
 }
 
 section {
@@ -24,7 +26,7 @@ body {
 
 .section-header {
     grid-column: 1 / 2;
-    color: var(--text-color-primary);
+    color: var(--text-color-tertiary);
     text-align: left;
 }
 
@@ -42,6 +44,19 @@ hr {
     color: var(--text-color-primary);
     grid-column: 2 / 12;
     width: 50%;
+}
+
+.section-header-shape {
+    background-color: var(--accent-color);
+    grid-row: 1;
+    grid-column: 1 / 4;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+}
+
+i {
+    color: var(--accent-color);
 }
 /* ... */
 
@@ -167,6 +182,20 @@ hr {
 /* About */
 .about-content {
     color: var(--text-color-primary);
+}
+
+.about-resume-icon {
+    text-align: center;
+}
+
+.about-resume-icon a {
+    font-size: 8vh;
+    color: var(--text-color-primary);
+    text-decoration: none;
+}
+
+.about-resume-icon a:hover {
+    color: var(--text-color-secondary);
 }
 /* ... */
 
