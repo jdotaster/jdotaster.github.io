@@ -57,6 +57,7 @@ i:hover {
 .subheader-text {
     grid-area: subheader;
     text-align: center;
+    margin-bottom: 4vh;
 }
 /* ... */
 
@@ -220,7 +221,7 @@ i:hover {
 /* Skills */
 #skills {
     display: grid;
-    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-columns: 1fr 2fr 1fr;
     grid-template-rows: auto;
     grid-template-areas:
         ". header ."
@@ -271,6 +272,16 @@ i:hover {
 /* ... */
 
 /* Projects */
+#projects {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+        ". header ."
+        ". subheader ."
+        "content-left content-center content-right"
+}
+
 .projects-subheader {
     grid-row: 2;
     font-size: 1rem;
@@ -280,42 +291,38 @@ i:hover {
 /* ... */
 
 /* Contact */
+#contact {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+        ". header ."
+        ". subheader ."
+        ". content ."
+}
+
+.contact-content {
+    grid-area: content;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "content-left content-center content-right";
+}
+.contact-item {
+    text-align: center;
+    font-size: 8vh;
+}
+
 #contact-li {
-    grid-column: 1;
-    grid-row: 3;
+    grid-area: content-left;
 }
 
 #contact-email {
-    grid-column: 2;
-    grid-row: 3;
+    grid-area: content-center;
 }
 
 #contact-github {
-    grid-column: 3;
-    grid-row: 3;
-}
-
-.contact-item {
-    color: var(--text-color-primary);
-    text-align: center;
-    font-size: 8vh;
-    align-items: center;
-}
-
-.contact-item a {
-    text-decoration: none;
-    color: inherit;
-}
-
-.contact-subheader {
-    grid-row: 2;
-    grid-column: 1;
-    font-size: 1rem;
-    text-align: left;
-    color: var(--text-color-primary);
-}
-
-.contact-item a:hover {
-    color: var(--text-color-secondary);
+    grid-area: content-right;
 }
 /* ... */
