@@ -8,6 +8,11 @@
     --text-color-secondary: #7f655d;
 }
 
+section {
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+}
+
 * {
     box-sizing: border-box;
 }
@@ -31,6 +36,12 @@ body {
 #about, #skills, #projects, #contact {
     display: grid;
     grid-column: 2 / 12;
+}
+
+hr {
+    color: var(--text-color-primary);
+    grid-column: 2 / 12;
+    width: 50%;
 }
 /* ... */
 
@@ -124,7 +135,7 @@ body {
 /* ... */
 
 
-/* Intr */
+/* Intro */
 #intro {
     grid-column: 2 / 12;
     display: grid;
@@ -179,6 +190,14 @@ body {
     color: var(--text-color-primary);
 }
 
+.skills-subheader {
+    grid-row: 2;
+    grid-column: 1 / 4;
+    font-size: 1rem;
+    color: var(--text-color-primary);
+    text-align: left;
+}
+
 .skills-item.i {
     aspect-ratio: 1;
     font-size: 4vh;
@@ -186,41 +205,51 @@ body {
 
 #skills-item-1 {
     grid-column: 5 / 7;
-    grid-row: 2;
+    grid-row: 3;
 }
 
 #skills-item-2 {
     grid-column: 7 / 9;
-    grid-row: 2;
+    grid-row: 3;
 }
 
 #skills-item-3 {
     grid-column: 4 / 6;
-    grid-row: 3;
+    grid-row: 4;
 }
 
 #skills-item-4 {
     grid-column: 6 / 8;
-    grid-row: 3;
+    grid-row: 4;
 }
 
 #skills-item-5 {
     grid-column: 8 / 10;
-    grid-row: 3;
+    grid-row: 4;
 }
 
 #skills-item-6 {
     grid-column: 5 / 7;
-    grid-row: 4;
+    grid-row: 5;
 }
 
 #skills-item-7 {
     grid-column: 7 / 9;
-    grid-row: 4;
+    grid-row: 5;
 }
 /* ... */
 
 /* Projects */
+#projects-container {
+    display: grid;
+    align-items: center;
+}
+.projects-subheader {
+    grid-row: 2;
+    font-size: 1rem;
+    color: var(--text-color-primary);
+    text-align: left;
+}
 /* ... */
 
 /* Contact */
@@ -233,17 +262,17 @@ body {
 
 #contact-li {
     grid-column: 1;
-    grid-row: 2;
+    grid-row: 3;
 }
 
 #contact-email {
     grid-column: 2;
-    grid-row: 2;
+    grid-row: 3;
 }
 
 #contact-github {
     grid-column: 3;
-    grid-row: 2;
+    grid-row: 3;
 }
 
 .contact-item {
@@ -256,6 +285,14 @@ body {
 .contact-item a {
     text-decoration: none;
     color: inherit;
+}
+
+.contact-subheader {
+    grid-row: 2;
+    grid-column: 1;
+    font-size: 1rem;
+    text-align: left;
+    color: var(--text-color-primary);
 }
 
 .contact-item a:hover {
